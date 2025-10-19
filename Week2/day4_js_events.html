@@ -1,0 +1,23 @@
+<!-- 🟨 Day 4 – JS Event Handling -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UESL Button Event Demo</title>
+</head>
+<body>
+  <h2>UESL Interactive Button</h2>
+  <p id="output">Click the button below 👇</p>
+
+  <button id="mottoBtn">Show UESL Motto</button>
+
+  <script>
+    // 🧠 Event Handling in JavaScript
+    document.getElementById("mottoBtn").onclick = function() {
+      document.getElementById("output").innerText = "📘 Empower. Elevate. Excel — The UESL Motto!";
+      document.getElementById("output").style.color = "green";
+    };
+  </script>
+</body>
+</html>
+

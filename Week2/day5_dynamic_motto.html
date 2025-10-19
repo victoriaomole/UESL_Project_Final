@@ -1,0 +1,24 @@
+<!-- 🟨 Day 5 – Dynamic Motto Project -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UESL Dynamic Motto</title>
+</head>
+<body>
+  <h1>UES Learning Motto App</h1>
+  <button id="fetchBtn">Show Motto</button>
+  <p id="result"></p>
+
+  <script>
+    // 🧠 Simulate fetching data dynamically
+    const motto = "📘 Empower. Elevate. Excel — The UES Learning Motto!";
+
+    document.getElementById("fetchBtn").onclick = () => {
+      document.getElementById("result").innerText = motto;
+      document.getElementById("result").style.color = "blue";
+      document.getElementById("result").style.fontWeight = "bold";
+    };
+  </script>
+</body>
+</html>

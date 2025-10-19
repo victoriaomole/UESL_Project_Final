@@ -1,0 +1,39 @@
+<!-- 🟨 Week 3 — Day 5: UESL Score Dashboard -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UESL Score Dashboard</title>
+</head>
+<body>
+  <h1>🎓 UESL Score Dashboard</h1>
+  <button id="showScores">Show Top Scores</button>
+  <ul id="scoreList"></ul>
+
+  <script>
+    // Simulate fetched data
+    const students = [
+      { name: "Victoria", score: 95 },
+      { name: "Daniel", score: 88 },
+      { name: "Mariam", score: 72 },
+      { name: "James", score: 81 },
+      { name: "John", score: 90 }
+    ];
+
+    document.getElementById("showScores").onclick = () => {
+      // Filter top scorers (above 85)
+      const topScorers = students.filter(s => s.score >= 85);
+
+      // Display dynamically
+      const list = document.getElementById("scoreList");
+      list.innerHTML = ""; // clear before display
+      topScorers.forEach(s => {
+        const li = document.createElement("li");
+        li.textContent = `${s.name} — ${s.score}`;
+        list.appendChild(li);
+      });
+    };
+  </script>
+</body>
+</html>
+
