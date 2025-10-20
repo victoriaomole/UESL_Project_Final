@@ -22,4 +22,6 @@ console.log("📘 After removing first service:", services);
 // Add new item at beginning
 services.unshift("Technical Writing");
 console.log("📘 After adding new first service:", services);
+// Branching test update
+console.log("Hello from the Week 4 feature branch!");
 
