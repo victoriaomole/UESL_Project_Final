@@ -24,4 +24,6 @@ services.unshift("Technical Writing");
 console.log("📘 After adding new first service:", services);
 // Branching test update
 console.log("Hello from the Week 4 feature branch!");
+console.log("👋 Testing Git branching visually!");
+
 
